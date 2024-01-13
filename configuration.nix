@@ -114,6 +114,9 @@
 
   # Allow unfree packages (Nvidia drivers)
   nixpkgs.config.allowUnfree = true;
+  
+  # Disable ssh ask password
+  programs.ssh.askPassword = "";
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
