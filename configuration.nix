@@ -135,6 +135,7 @@
     papirus-icon-theme
     gnome.gnome-tweaks
     discord
+    libxml2
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
