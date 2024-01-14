@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./sub-configuration/gnome.nix
+      ./sub-configuration/cinnamon.nix
     ];
 
 
@@ -58,6 +59,9 @@
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
+
+  # Enable the GDM display manager.
+  services.xserver.displayManager.gdm.enable = true;
 
   # Exclude xserver packages
   services.xserver.excludePackages = with pkgs; [ xterm ];
