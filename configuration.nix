@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./sub-configuration/gnome.nix
     ];
 
 
@@ -61,10 +62,6 @@
   # Exclude xserver packages
   services.xserver.excludePackages = with pkgs; [ xterm ];
   
-  # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
-
   # Configure keymap in X11
   services.xserver = {
     layout = "it";
@@ -166,26 +163,4 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "23.11"; # Did you read the comment?
-
-  
-
-environment.gnome.excludePackages = (with pkgs; [
-  gnome-photos
-  gnome-tour
-  gnome-console
-]) ++ (with pkgs.gnome; [
-  cheese # webcam tool
-  gnome-music
-  gedit # text editor
-  epiphany # web browser
-  geary # email reader
-  evince # document viewer
-  gnome-characters
-  totem # video player
-  tali # poker game
-  iagno # go game
-  hitori # sudoku game
-  atomix # puzzle game
-]);
-
 }
