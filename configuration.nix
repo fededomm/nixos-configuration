@@ -95,6 +95,12 @@
     #media-session.enable = true;
   };
 
+  programs.git = {
+    enable = true;
+    package = pkgs.gitFull;
+    config.credential.helper = "libsecret";
+  };
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
@@ -130,7 +136,6 @@
     vscode
     go
     neofetch
-    git
     wget
     btop
     docker-compose
