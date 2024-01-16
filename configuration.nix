@@ -10,6 +10,7 @@
       ./hardware-configuration.nix
       ./sub-configuration/gnome.nix
       ./sub-configuration/cinnamon.nix
+      ./sub-configuration/fonts.nix
     ];
 
 
