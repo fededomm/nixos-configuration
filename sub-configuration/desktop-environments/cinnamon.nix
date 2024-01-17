@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  services.xserver.desktopManager.cinnamon.enable = false;
+  services.xserver.desktopManager.cinnamon.enable = true;
 
   environment.cinnamon.excludePackages = (with pkgs; []);
 }
