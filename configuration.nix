@@ -127,6 +127,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    python3
     starship
     jetbrains.idea-ultimate
     jetbrains.goland

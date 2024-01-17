@@ -5,6 +5,6 @@
     (nerdfonts.override { fonts = [ 
       "FiraCode"
       "DroidSansMono"
-    ]; })
+    ];})
   ];
 }
