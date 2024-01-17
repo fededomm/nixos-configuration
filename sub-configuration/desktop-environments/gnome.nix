@@ -1,0 +1,26 @@
+{ config, pkgs, ... }:
+
+{
+    # Enable the GNOME Desktop Environment.
+    services.xserver.desktopManager.gnome.enable = false;
+
+    environment.gnome.excludePackages = (with pkgs; [
+        gnome-photos
+        gnome-tour
+        gnome-console
+    ]) ++ (with pkgs.gnome; [
+        cheese # webcam tool
+        gnome-music
+        gedit # text editor
+        epiphany # web browser
+        geary # email reader
+        evince # document viewer
+        gnome-characters
+        totem # video player
+        tali # poker game
+        iagno # go game
+        hitori # sudoku game
+        atomix # puzzle game
+    ]);
+
+}

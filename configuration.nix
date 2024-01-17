@@ -6,15 +6,15 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [ 
       ./hardware-configuration.nix
-      ./sub-configuration/gnome.nix
-      ./sub-configuration/cinnamon.nix
+      ./sub-configuration/desktop-environments/gnome.nix
+      ./sub-configuration/desktop-environments/cinnamon.nix
       ./sub-configuration/fonts.nix
-      ./sub-configuration/nvidia-drivers.nix
-      ./sub-configuration/audio-drivers.nix
+      ./sub-configuration/drivers/nvidia-drivers.nix
+      ./sub-configuration/drivers/audio-drivers.nix
       ./sub-configuration/xserver.nix
-      ./sub-configuration/local-timezone-and-klayout.nix
+      ./sub-configuration/local-timezone-layout.nix
       ./sub-configuration/packages.nix
       ./sub-configuration/bootloader.nix
       ./sub-configuration/network.nix
