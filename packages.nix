@@ -32,6 +32,7 @@
   environment.systemPackages = with pkgs; [
     godot_4
     python3
+    python311Packages.pip
     starship
     jetbrains.pycharm-professional
     jetbrains.idea-ultimate
