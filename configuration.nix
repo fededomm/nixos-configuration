@@ -7,6 +7,7 @@
 {
   imports =
     [ 
+      ./packages.nix
       ./hardware-configuration.nix
       ./sub-configuration/desktop-environments/gnome.nix
       ./sub-configuration/desktop-environments/cinnamon.nix
@@ -15,7 +16,6 @@
       ./sub-configuration/drivers/audio-drivers.nix
       ./sub-configuration/xserver.nix
       ./sub-configuration/local-timezone-layout.nix
-      ./sub-configuration/packages.nix
       ./sub-configuration/bootloader.nix
       ./sub-configuration/network.nix
       ./sub-configuration/ssh.nix
