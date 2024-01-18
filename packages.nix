@@ -33,6 +33,7 @@
     godot_4
     python3
     starship
+    jetbrains.pycharm-professional
     jetbrains.idea-ultimate
     jetbrains.goland
     jetbrains.datagrip
