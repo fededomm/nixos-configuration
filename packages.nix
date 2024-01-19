@@ -30,6 +30,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    openvpn
     nodejs_21
     godot_4
     python3

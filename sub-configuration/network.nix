@@ -15,4 +15,6 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+  
+  #networking.networkmanager.dns = "systemd-resolved";
 }
