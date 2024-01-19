@@ -23,6 +23,7 @@
     description = "fededomm";
     extraGroups = [ "networkmanager" "wheel" "docker"];
     packages = with pkgs; [
+      krita
       teams-for-linux
     ];
   };
