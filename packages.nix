@@ -23,39 +23,58 @@
     description = "fededomm";
     extraGroups = [ "networkmanager" "wheel" "docker"];
     packages = with pkgs; [
+      insomnia
+      libsForQt5.minuet
       krita
       teams-for-linux
+      discord
     ];
   };
   
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
+  environment.systemPackages = with pkgs; [ 
+  #system tools
     openvpn
-    nodejs_21
-    godot_4
+
+  #Python and pip
     python3
     python311Packages.pip
-    starship
+    
+  #Jetbrains
     jetbrains.pycharm-professional
     jetbrains.idea-ultimate
     jetbrains.goland
     jetbrains.datagrip
+
+  #Gnome
     gnome-extension-manager
     gnome.gnome-terminal
+    gnome.gnome-tweaks
+    
+  #Developement
+    godot_4
+    nodejs_21
+    vscode
+    libxml2
+    go
+    
+  #Firefox
     firefox
     thunderbird
-    vscode
-    go
-    neofetch
-    wget
-    btop
+    
+  #Docker
     docker-compose
     docker-buildx
+    
+  #terminal
+    btop
+    neofetch
+    starship
+    wget
+    
+  #Icon theme  
     papirus-icon-theme
-    gnome.gnome-tweaks
-    discord
-    libxml2
   ];
 
 }
