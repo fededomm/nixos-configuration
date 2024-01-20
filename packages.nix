@@ -24,7 +24,6 @@
     extraGroups = [ "networkmanager" "wheel" "docker"];
     packages = with pkgs; [
       insomnia
-      libsForQt5.minuet
       krita
       teams-for-linux
       discord
