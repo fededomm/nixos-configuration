@@ -34,16 +34,12 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [ 
-  #KDE 
-    libsForQt5.kaccounts-integration
-    libsForQt5.kaccounts-providers
-    libsForQt5.packagekit-qt
-    libportal-qt5
 
   #system tools
     openvpn
 
   #Python and pip
+    poetry
     python3
     python311Packages.pip
     
