@@ -23,6 +23,7 @@
     description = "fededomm";
     extraGroups = [ "networkmanager" "wheel" "docker"];
     packages = with pkgs; [
+      vscode
       libsForQt5.okular
       insomnia
       krita
