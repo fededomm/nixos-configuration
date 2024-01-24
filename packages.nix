@@ -35,13 +35,13 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [ 
   #Ventoy
-    ventoy-full
+  #ventoy-full
     
   #system tools
     openvpn
 
   #Python and pip
-    poetry
+  #poetry
     python3
     python311Packages.pip
     
@@ -59,7 +59,6 @@
   #Developement
     godot_4
     nodejs_21
-    vscode
     libxml2
     go
     
