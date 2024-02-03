@@ -29,6 +29,7 @@
       krita
       teams-for-linux
       discord
+      rustdesk
     ];
   };
   
