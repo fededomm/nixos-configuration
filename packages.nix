@@ -48,10 +48,7 @@
     python311Packages.pip
     
   #Jetbrains
-    jetbrains.pycharm-professional
-    jetbrains.idea-ultimate
-    jetbrains.goland
-    jetbrains.datagrip
+    jetbrains.idea-community
 
   #Gnome
     gnome-extension-manager

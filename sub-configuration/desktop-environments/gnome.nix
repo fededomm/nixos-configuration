@@ -2,7 +2,7 @@
 
 {
     # Enable the GNOME Desktop Environment.
-    services.xserver.desktopManager.gnome.enable = false;
+    services.xserver.desktopManager.gnome.enable = true;
 
     environment.gnome.excludePackages = (with pkgs; [
         gnome-photos
